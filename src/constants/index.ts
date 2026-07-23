@@ -434,6 +434,8 @@ export const requestMessagesResponses = {
 	REQUEST_TYPE_METHOD_GET_MEGA_LEVEL_UP_PREVIEW: [3080, POGOProtos.Rpc.GetMegaLevelUpPreviewProto, POGOProtos.Rpc.GetMegaLevelUpPreviewOutProto],
 	REQUEST_TYPE_METHOD_GET_DEBUG_EGG_STATISTICS_ACTION: [3083, POGOProtos.Rpc.DebugEggStatisticsProto, POGOProtos.Rpc.DebugEggStatisticsOutProto],
 	REQUEST_TYPE_METHOD_FLEE_BATTLE_ENCOUNTER: [3084, POGOProtos.Rpc.FleeBattleEncounterProto, POGOProtos.Rpc.FleeBattleEncounterOutProto],
+	REQUEST_TYPE_METHOD_DEBUG_TEST_SETUP: [3085, POGOProtos.Rpc.DebugTestSetupProto, POGOProtos.Rpc.DebugTestSetupOutProto],
+	REQUEST_TYPE_METHOD_CREATE_BUG_REPORT: [3088, POGOProtos.Rpc.CreateBugReportProto, POGOProtos.Rpc.CreateBugReportOutProto],
 	REQUEST_TYPE_PLATFORM_REGISTER_PUSH_NOTIFICATION: [5000, POGOProtos.Rpc.PushNotificationRegistryProto, POGOProtos.Rpc.PushNotificationRegistryOutProto],
 	REQUEST_TYPE_PLATFORM_UNREGISTER_PUSH_NOTIFICATION: [5001, null, null],
 	REQUEST_TYPE_PLATFORM_UPDATE_NOTIFICATION_STATUS: [5002, POGOProtos.Rpc.UpdateNotificationProto, POGOProtos.Rpc.UpdateNotificationOutProto],
