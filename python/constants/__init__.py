@@ -446,6 +446,8 @@ REQUEST_MESSAGES_RESPONSES = {
     'REQUEST_TYPE_METHOD_GET_MEGA_LEVEL_UP_PREVIEW': [3080, getattr(pogo_pb2, 'GetMegaLevelUpPreviewProto', None), getattr(pogo_pb2, 'GetMegaLevelUpPreviewOutProto', None)],
     'REQUEST_TYPE_METHOD_GET_DEBUG_EGG_STATISTICS_ACTION': [3083, getattr(pogo_pb2, 'DebugEggStatisticsProto', None), getattr(pogo_pb2, 'DebugEggStatisticsOutProto', None)],
     'REQUEST_TYPE_METHOD_FLEE_BATTLE_ENCOUNTER': [3084, getattr(pogo_pb2, 'FleeBattleEncounterProto', None), getattr(pogo_pb2, 'FleeBattleEncounterOutProto', None)],
+    'REQUEST_TYPE_METHOD_DEBUG_TEST_SETUP': [3085, getattr(pogo_pb2, 'DebugTestSetupProto', None), getattr(pogo_pb2, 'DebugTestSetupOutProto', None)],
+    'REQUEST_TYPE_METHOD_CREATE_BUG_REPORT': [3088, getattr(pogo_pb2, 'CreateBugReportProto', None), getattr(pogo_pb2, 'CreateBugReportOutProto', None)],
     'REQUEST_TYPE_PLATFORM_REGISTER_PUSH_NOTIFICATION': [5000, getattr(pogo_pb2, 'PushNotificationRegistryProto', None), getattr(pogo_pb2, 'PushNotificationRegistryOutProto', None)],
     'REQUEST_TYPE_PLATFORM_UNREGISTER_PUSH_NOTIFICATION': [5001, None, None],
     'REQUEST_TYPE_PLATFORM_UPDATE_NOTIFICATION_STATUS': [5002, getattr(pogo_pb2, 'UpdateNotificationProto', None), getattr(pogo_pb2, 'UpdateNotificationOutProto', None)],
