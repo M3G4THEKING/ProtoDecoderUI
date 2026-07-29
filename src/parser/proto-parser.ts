@@ -125,6 +125,58 @@ export const decodeProto = (method: number, data: string, dataType: string): Dec
                         }
 
                     }
+                    // TODO: fix me!
+                    else if (foundMethod[0] === 610000) {
+                        switch (parsedData.telemetry_scope_id) {
+                            case "CORE": //POGOProtos.Rpc.MapsClientTelemetryBatchProto.TelemetryScopeId.CORE:
+                                /*for (let i = 0; i < parsedData.events.length; i++) {
+                                    parsedData.events[i].encoded_message = POGOProtos.Rpc.MapsPlatformPlayerInfo.decode(b64Decode(parsedData.events[i].encoded_message)).toJSON();
+                                }*/
+                                break;
+                            case "GAME": //POGOProtos.Rpc.MapsClientTelemetryBatchProto.TelemetryScopeId.GAME:
+                                /*for (let i = 0; i < parsedData.events.length; i++) {
+                                    parsedData.events[i].encoded_message = POGOProtos.Rpc.MapsPlatformPlayerInfo.decode(b64Decode(parsedData.events[i].encoded_message)).toJSON();
+                                }*/
+                                break;
+                            case "TITAN": //POGOProtos.Rpc.MapsClientTelemetryBatchProto.TelemetryScopeId.TITAN:
+                                /*for (let i = 0; i < parsedData.events.length; i++) {
+                                    parsedData.events[i].encoded_message = POGOProtos.Rpc.MapsPlatformPlayerInfo.decode(b64Decode(parsedData.events[i].encoded_message)).toJSON();
+                                }*/
+                                break;
+                            case "COMMON": //POGOProtos.Rpc.MapsClientTelemetryBatchProto.TelemetryScopeId.COMMON:
+                                /*for (let i = 0; i < parsedData.events.length; i++) {
+                                    parsedData.events[i].encoded_message = POGOProtos.Rpc.MapsTelemetryKey.decode(b64Decode(parsedData.events[i].encoded_message)).toJSON();
+                                }*/
+                                break;
+                            case "PRE_AGE_GATE": //POGOProtos.Rpc.MapsClientTelemetryBatchProto.TelemetryScopeId.PRE_AGE_GATE:
+                                /*for (let i = 0; i < parsedData.events.length; i++) {
+                                    parsedData.events[i].encoded_message = POGOProtos.Rpc.MapsPlatformPreAgeGateTrackingOmniproto.decode(b64Decode(parsedData.events[i].encoded_message)).toJSON();
+                                }*/
+                                break;
+                            case "PRE_LOGIN": //POGOProtos.Rpc.MapsClientTelemetryBatchProto.TelemetryScopeId.PRE_LOGIN:
+                                /*for (let i = 0; i < parsedData.events.length; i++) {
+                                    parsedData.events[i].encoded_message = POGOProtos.Rpc.MapsPlatformPreLoginTrackingOmniproto.decode(b64Decode(parsedData.events[i].encoded_message)).toJSON();
+                                }*/
+                                break;
+                            case "ARDK": //POGOProtos.Rpc.MapsClientTelemetryBatchProto.TelemetryScopeId.ARDK:
+                                /*for (let i = 0; i < parsedData.events.length; i++) {
+                                    parsedData.events[i].encoded_message = POGOProtos.Rpc.MapsPlatformPreLoginTrackingOmniproto.decode(b64Decode(parsedData.events[i].encoded_message)).toJSON();
+                                }*/
+                                break;
+                            case "MARKETING": //POGOProtos.Rpc.MapsClientTelemetryBatchProto.TelemetryScopeId.MARKETING:
+                                /*for (let i = 0; i < parsedData.events.length; i++) {
+                                    parsedData.events[i].encoded_message = POGOProtos.Rpc.MapsPlatformPreAgeGateTrackingOmniproto.decode(b64Decode(parsedData.events[i].encoded_message)).toJSON();
+                                }*/
+                                break;
+                            case "GAME_TRIGGERED": //POGOProtos.Rpc.MapsClientTelemetryBatchProto.TelemetryScopeId.GAME_TRIGGERED:
+                                /*for (let i = 0; i < parsedData.events.length; i++) {
+                                    parsedData.events[i].encoded_message = POGOProtos.Rpc.MapsPlatformPreAgeGateTrackingOmniproto.decode(b64Decode(parsedData.events[i].encoded_message)).toJSON();
+                                }*/
+                                break;
+                            default:
+                                break;
+                        }
+                    }
                     returnObject = {
                         methodId: foundMethod[0],
                         methodName: remasterOrCleanMethodString(foundMethodString),
